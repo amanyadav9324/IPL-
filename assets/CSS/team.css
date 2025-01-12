@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-style: oblique;
+}
+
+.team {
+    background-color: #001d36;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    padding: 20px;
+  }
+
+  .header img {
+    max-width: 200px;
+  }
+
+  .teams-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 40px;
+  }
+
+  .team-card {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: calc(25% - 15px); /* 25% width minus half the gap for 4 cards in a row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-weight: bold;
+}
+
+  .team-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
+
+  .bangaluru {
+    background-color: #1c0304;
+    color: white;
+  }
+
+  .delhi {
+    background-color: #dd1f26;
+    color: white;
+  }
+
+  .gujarat {
+    background-color: #a4d8f5;
+  }
+
+  .kolkata {
+    background-color: #4b3066;
+    color: white;
+  }
+
+  .chennai {
+    background-color: #f7da49;
+  }
+
+  .mumbai {
+    background-color: #0969f1;
+  }
+
+  .punjab {
+    background-color: #ff050e;
+    color: white;
+  }
+
+  .rajasthan {
+    background-color: #cf78ce;
+    color: white;
+  }
+
+  .hyderabad {
+    background-color: #e7570f;
+    color: white;
+  }
+
+
+  @media (max-width: 768px) {
+    .team-card {
+        width: calc(50% - 15px);
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-card {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+  /* footer section */
+
+
+  .footer {
+    background-image: url(../../images/All-img/main-img.jpg);
+    background-position: bottom;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .footer-section {
+    text-align: left;
+  }
+  
+  .footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-list a {
+    text-decoration: none;
+    color: #bbbbbb;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-list a:hover {
+    color: #ff0000;
+  }
+
+   /*  Footer copy right Section */
+footer {
+  background: var(--footer-color);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  .auction-list, .player-list, .team-list {
+      justify-content: center;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 300px; 
+  }
+  
+  p{
+    font-size: 12px;
+  }
+}
+/*  Footer copy right Section End */

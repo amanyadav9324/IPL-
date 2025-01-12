@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #6a0dad, #001f4d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  cursor: default;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.heading {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2.2rem;
+  color: #ff0000;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 0 100px 80px 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin: 10px;      
+  background-color: #007bff;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card .header {
+  background: linear-gradient(45deg, #001f4d, #6a0dad);
+  padding: 10px;
+}
+
+.card .header img {
+  height: 50px;
+}
+
+.card .player-image {
+  margin: 20px 0;
+}
+
+.card .player-image img {
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background-color: darkblue;
+  transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+.card .player-image img:hover {
+  transform: scale(1.2);
+  border-color: #ff0000;
+}
+
+.details {
+  padding: 15px;
+  background-color: rgb(0, 0, 0);
+}
+
+.details .title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #0066ff;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.card .details .subtitle {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.card .btn {
+  border-top: 1px solid white;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #000;
+  color: #ff0000;
+}
+
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .container {
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+
+/*  Footer list Section */
+  
+.footer {
+  background-image: url(../../images/All-img/main-img.jpg);
+  background-position: bottom;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: var(--hover-color);
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #bbbbbb;
+  transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+
+/*  Footer list Section End */
+
+
+/*  Footer copy right Section */
+footer {
+  background: #001f4d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  .auction-list, .player-list, .team-list {
+      justify-content: center;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 300px;
+  }
+  
+  p{
+    font-size: 12px;
+  }
+}
+/*  Footer copy right Section End */
